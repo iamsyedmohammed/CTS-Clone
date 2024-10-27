@@ -324,6 +324,23 @@ a {
         margin: 10px;
         border-radius: 15px;
         background-color: white;
-        margin-left: 80px
+        margin-left: 80px;
+        padding: 10px;
+    }
+    .message-container .heading {
+        /* Add your styling for the texts */
+        font-size: 24px;
+        font-weight: 600px;
+        color: #333;
+        font-family: "Poppins",sans-serif;
+        font-weight: bolder;
+    }
+
+    .message-container .head {
+        /* Add your styling for the texts */
+        font-size: 15px;
+        font-weight: 300px;
+        color: #333;
+        font-family: "Poppins",sans-serif;
         ;
     }
