@@ -353,10 +353,12 @@ a {
 }
 .message-container .btn{
     height: 35px;
+    width: 180px;
     border-radius: 15px;
     text-align: left;
     font-weight: 600px;
     font-weight: bolder;
+    transition: transform 0.3s ease;
 }
 .background5{
 background-image: url(/src/images/bg-featured-services-1536x711.webp);
@@ -381,16 +383,19 @@ background-size: cover; /* Makes the image cover the entire area */
     color: #f3f3f4;
     display: flex;
     font-size: 24px;
-    font-weight: 300px;
+    font-weight: 300;
     font-family: "Poppins",sans-serif;
     font-style: normal;
-    padding-left: 10px;
+    padding-left: 160px;
+    padding-bottom: 25px;
+    padding-top: 10px;
+
 
 }
 .msg-container{
     display: flex;
     flex-direction: row;
-    gap: 50px;
+    gap: 25px;
     justify-content: center;
     
     
@@ -408,12 +413,12 @@ background-size: cover; /* Makes the image cover the entire area */
 .one-row{
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 30px;
 }
 .two-row{
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 30px;
 }
 .msg-1{
     display: flex;
@@ -443,15 +448,26 @@ background-size: cover; /* Makes the image cover the entire area */
 }
 .read{
     border-radius: 10px;
-    height: 25px;
+    height: 35px;
+    width: 160px;
     font-weight: bolder;
+    transition: transform 0.3s ease;
+    text-align: left;
+
 }
+
+.read:hover {
+    transform: scale(1.1);
+}
+
 
 .read:hover{
     color: black;
     background-color: #1994ff;
 }
+
 .btn:hover{
     color: black;
+    transform: scale(1.1);
     background-color: #1994ff;
 }
