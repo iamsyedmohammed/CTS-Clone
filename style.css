@@ -1,6 +1,8 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: "Poppins",sans-serif;
+
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Satisfy&display=swap');
@@ -90,17 +92,31 @@ a {
     /* Space boxes evenly */
     /* align-items: center; */
     gap: 20px;
-    height: 500px;
+    height: 550px;
     /* Adjust as needed */
+    /* display: flex; */
 }
 
 
 .main-box-container {
-        margin-left: 200px; /* Pushes the entire container to the right */
-        margin-right: auto;
-        width: fit-content; /* Ensures it only takes as much space as needed */
+        margin-left: 100px; /* Pushes the entire container to the right */
+        margin-top: 70px;
+        /* margin-right: auto; */
+        width: fit-content;
+        display: flex; 
+       /* Ensures it only takes as much space as needed */
 }
     
+.mini-container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 135px;
+    justify-content: center;
+}
+.mini-container p{
+    font-size: 24px;
+    font-weight: 300;
+}
 
 
 /* First-row container*/
@@ -109,8 +125,10 @@ a {
     display: flex;
     justify-content: flex-start; /* Aligns items to the start, keeping them close */
     gap: 10px; /* Controls the space between items */
+    /* justify-content: space-around; */
     flex-wrap: wrap; /* Allows items to wrap to the next row if necessary */
     padding: 9px;
+    
 }
 
 .background-section .paragraph{
@@ -118,6 +136,10 @@ a {
    justify-content: flex-end;
    flex-wrap: wrap;
    
+}
+.tiles{
+    display: flex;
+    max-width: 300px;
 }
 /* .img-container{
     display: flex;
@@ -184,9 +206,10 @@ a {
     font-size: 20px;
 }
 
-.button-container {
+
+/* .button-container {
     row-gap: 50px;
-}
+} */
 
 .background2 {
     background-image: url(./src/images/plain-light-blue-background-3440-x-1440-20l5bry2v5zc3pzv.jpg);
@@ -215,19 +238,55 @@ a {
     position: absolute;
     right: 50px;
     /* Adjust as needed */
-    top: 140%;
+    top: 150%;
     transform: translateY(-50%);
     /* Center vertically */
-    width: 600px;
+    width: 500px;
     border-radius: 20px;
 }
 
 .button-container .schedule-call {
-    position: absolute;
-    right: 90%;
-    top: 65%;
+    width: 180px;
+    height: 39px;
+    border-radius: 5px  #1994ff;
 
 }
+/* Container to control overflow and scrolling area */
+.scroll-container {
+    height: 40px; /* Adjust based on how much content you want visible */
+    overflow: hidden;
+    position: relative;
+    padding-top: 10px;
+  }
+  
+  /* Infinite scroll animation */
+  .scroll-container .paras {
+    animation: scrollHorizontal 8s linear infinite;
+  }
+  
+ 
+  
+  @keyframes scrollHorizontal {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-100%);
+    }
+  }
+  
+  /* Styling for text content */
+  .tts1 .tts2{
+    font-size: 40px;
+    font-family: "Roboto Slab",serif;
+    font-weight: bolder;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+
+  
 
 .schedule-call {
     margin-left: 25px;
@@ -238,6 +297,7 @@ a {
     box-shadow: #333;
     cursor: pointer;
     transition: transform 0.3s ease;
+    margin-bottom: 10px;
 
 }
 
@@ -368,7 +428,7 @@ background-size: cover; /* Makes the image cover the entire area */
 
 }
 
-.background5 .hed{
+.hed{
     color: #f3f3f4;
     display: flex;
     justify-content: center;
@@ -379,7 +439,7 @@ background-size: cover; /* Makes the image cover the entire area */
     padding-top: 100px;
 }
 
-.background5 .txt{
+.txt{
     color: #f3f3f4;
     display: flex;
     font-size: 24px;
@@ -470,4 +530,64 @@ background-size: cover; /* Makes the image cover the entire area */
     color: black;
     transform: scale(1.1);
     background-color: #1994ff;
+}
+.background6{
+    background-color: #fff;
+    height: 800px;
+}
+
+.background6 .hed{
+    color: #1994ff;
+}
+
+.background6 .txt{
+    color: #212529;
+}
+.imu-container{
+    display: flex;
+    justify-content: space-evenly;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.imu-container .box1{
+    height: 450px;
+    width:400px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.imu-container .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding-left: 10px;
+}
+
+.imu-container .header-section{
+    font-size: 24px;
+    font-weight: 500;
+    font-weight: bold;
+}
+
+.imu-container .text-section{
+    font-size: 15px;
+    /* font-weight: 500;
+    font-weight: bold; */
+}
+
+.background6 .ls-cnt{
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+    font-size: 18px;
+}
+
+.ls-cnt .arrow{
+    margin-left: 25px;
 }
