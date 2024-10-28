@@ -87,11 +87,6 @@ a {
     background-position: center;
     background-repeat: no-repeat;
     padding: 20px;
-    /* /* display: flex; */
-    /* justify-content: space-around; */ 
-    /* Space boxes evenly */
-    /* align-items: center; */
-    gap: 20px;
     height: 550px;
     /* Adjust as needed */
     /* display: flex; */
@@ -101,7 +96,6 @@ a {
 .main-box-container {
         margin-left: 100px; /* Pushes the entire container to the right */
         margin-top: 70px;
-        /* margin-right: auto; */
         width: fit-content;
         display: flex; 
        /* Ensures it only takes as much space as needed */
@@ -141,20 +135,6 @@ a {
     display: flex;
     max-width: 300px;
 }
-/* .img-container{
-    display: flex;
-    justify-content: center;
-    gap:10px;
-    margin-top: 20px;
-    padding: 100px;
-    margin: auto;
-
-}
-
-.img-container img{
-    width: 25px;
-    height: 25px;
-} */
 
 /* Box styling */
 .box {
@@ -179,7 +159,7 @@ a {
 .box:hover {
     transform: scale(1.2);
     /* Slightly enlarge the box */
-    /* background-color: rgba(255, 255, 255, 1);  */
+    background-color: rgba(255, 255, 255, 1); 
     cursor: pointer;
 }
 
@@ -202,14 +182,8 @@ a {
 
 .paragraph {
     font-family: "Poppins", sans-serif;
-    /* font-weight: bold; */
     font-size: 20px;
 }
-
-
-/* .button-container {
-    row-gap: 50px;
-} */
 
 .background2 {
     background-image: url(./src/images/plain-light-blue-background-3440-x-1440-20l5bry2v5zc3pzv.jpg);
@@ -285,9 +259,6 @@ a {
     margin-bottom: 10px;
   }
   
-
-  
-
 .schedule-call {
     margin-left: 25px;
     font-family: "Poppins", sans-serif;
@@ -463,7 +434,6 @@ background-size: cover; /* Makes the image cover the entire area */
 .msg-container .msg{
     height: 300px;
     width: 500px;
-    /* gap: 10px; */
     border: 1px solid black;
     background-color: #f3f3f4;
     border-radius: 15px;
@@ -546,14 +516,12 @@ background-size: cover; /* Makes the image cover the entire area */
 .imu-container{
     display: flex;
     justify-content: space-evenly;
-    /* justify-content: center;
-    align-items: center; */
+ 
 }
 
 .imu-container .box1{
     height: 450px;
     width:400px;
-    /* border: 1px solid black; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -577,8 +545,7 @@ background-size: cover; /* Makes the image cover the entire area */
 
 .imu-container .text-section{
     font-size: 15px;
-    /* font-weight: 500;
-    font-weight: bold; */
+    
 }
 
 .background6 .ls-cnt{
