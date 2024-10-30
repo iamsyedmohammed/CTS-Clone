@@ -20,6 +20,7 @@ body {
     border-bottom: 2px solid #ccc;
     /* padding-bottom: 10px; */
     height: 100px;
+    width: 100%;
     /* Adjust to match header size */
     background-color: rgba(255, 255, 255, 0.6);
     /* Semi-transparent background */
@@ -29,9 +30,12 @@ body {
     /* Safari support */
     font-weight: 500;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    position: relative;
-    z-index: 1000;
+    /* position: relative; */
+    /* z-index: 1000; */
     /* Keep the header above the background */
+    position: fixed;
+    top: 0px;
+    
 }
 
 .image {
@@ -51,6 +55,7 @@ body {
     cursor: pointer;
     padding-top: 30px;
     transition: transform 0.3s ease;
+    margin-right: 65px;
 }
 
 .menu:hover {
@@ -89,6 +94,7 @@ body {
     background-repeat: no-repeat;
     padding: 20px;
     height: 550px;
+    margin-top: 25px;
     /* Adjust as needed */
     /* display: flex; */
 }
@@ -210,20 +216,6 @@ body {
     font-size: 25px;
 }
 
-.background2 video {
-    /* position: absolute;
-    right: 50px; */
-    /* Adjust as needed */
-    /* top: 150%; */
-    /* transform: translateY(-50%); */
-    /* Center vertically */
-    /* width: 500px;
-    border-radius: 20px; */
-}
-/* .container2{
-    display: flex;
-    flex-direction: column;
-} */
 .container-21{
 display: flex;
 flex-direction: column;
@@ -309,12 +301,7 @@ flex-direction: column;
     font-family: "Poppins", sans-serif;
 }
 
-.awards-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    cursor: pointer;
-}
+
 .img-container{
     display: flex;
     /* align-items: center; */
@@ -332,13 +319,24 @@ flex-direction: column;
 
 .background3 {
     background-image: url(./src/images/blank-white-background-xbsfzsltjksfompa.jpg);
-    height: 400px;
+    /* height: 400px;
+    width: 100%; */
+    height: 100%;
+    width: 100%;
     font-size: 32px;
     text-align: center;
     color: #1994ff;
     font-weight: bold;
     font-family: "Poppins", sans-serif;
 }
+.awards-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+    
+}
+
 .background4{
     background-color: #f3f3f4;
     display: flex;
@@ -583,8 +581,8 @@ background-size: cover; /* Makes the image cover the entire area */
 }
 .end{
     background-color:#212529 ;
-    width: 100%;
-    height: 400px;
+    width: auto;
+    height: auto;
 }
 .end .dabba{
     width: 180px;
